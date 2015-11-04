@@ -43,9 +43,9 @@ RUN echo /root/haxelib > /root/.haxelib
 RUN cp /root/.haxelib /etc/
 RUN haxelib install hxcpp
 RUN haxelib install lime
-RUN echo yes | haxelib run lime setup
+RUN echo y | haxelib run lime setup
 RUN haxelib install openfl
-RUN echo yes | haxelib run openfl setup
+RUN echo y | haxelib run openfl setup
 
 # Scripts
 ADD scripts /root/scripts
