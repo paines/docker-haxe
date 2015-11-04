@@ -42,6 +42,8 @@ RUN mkdir /root/haxelib
 RUN echo /root/haxelib > /root/.haxelib
 RUN cp /root/.haxelib /etc/
 RUN haxelib install hxcpp
+RUN haxelib install lime
+RUN haxelib install openfl
 
 # Scripts
 ADD scripts /root/scripts
